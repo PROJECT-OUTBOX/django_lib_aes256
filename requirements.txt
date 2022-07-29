@@ -1,0 +1,2 @@
+pycryptodome==3.15.0
+python-aes256==1.0.0
