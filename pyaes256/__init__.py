@@ -8,13 +8,14 @@ import sys
 from Crypto import Random
 from Crypto.Cipher import AES
 
+
 class PyAES256:
     # constructor
     def __init__(self):
         pass
         
     # pad with spaces at the end of the text
-    # beacuse AES needs 16 byte blocks
+    # becouse AES needs 16 byte blocks
     def pad(self, s):
         block_size = 16
         remainder = len(s) % block_size
@@ -101,6 +102,7 @@ class PyAES256:
         # print('unpad: ', original)
 
         return original
+
 
 # test module level
 if __name__=='__main__':
