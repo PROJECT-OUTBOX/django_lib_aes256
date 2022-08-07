@@ -1,6 +1,6 @@
 import math
 
-class Avalanche:
+class PyAvalanche:
     '''
         Create avalance effect for cryptograph testing
         ref : https://www.researchgate.net/post/What_is_the_avalanche_effect_in_cryptography_How_can_we_measure_it
@@ -38,7 +38,7 @@ class Avalanche:
 
         return m
 
-    def avalance_effect(self, chipper1, chipper2):
+    def avalanche_effect(self, chipper1, chipper2):
         '''
             chipper1 and chipper2 in string
         '''
@@ -92,8 +92,8 @@ if __name__=='__main__':
     chipper2 = 'Z3VFbi9lWDJtS1B5UzE4TGVsMzRHQT09'
     print('Chipper 1 = ', chipper1)
     print('Chipper 2 = ', chipper2)
-    ava = Avalanche()
-    result = ava.avalance_effect(chipper1, chipper2)
+    ava = PyAvalanche()
+    result = ava.avalanche_effect(chipper1, chipper2)
 
     print(result,'%')
     print("If more than 50% output bits have changed then the algo have good avalanche effect.")
