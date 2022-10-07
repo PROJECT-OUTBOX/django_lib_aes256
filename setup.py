@@ -19,7 +19,7 @@ setup(
     # eg: 1.0.0, 1.0.1, 3.0.2, 5.0-beta, etc.
     # You CANNOT upload two versions of your package with the same version number
     # This field is REQUIRED
-    version="1.0.3",
+    version="1.0.4",
 
 
     # The packages that constitute your project.
@@ -32,6 +32,11 @@ setup(
     # EITHER py_modules OR packages should be present.
     packages=find_packages(exclude="tests"),
 
+    # dependencies
+    install_requires=[
+        'pycryptodome',        
+    ],
+    
     # The description that will be shown on PyPI.
     # Keep it short and concise
     # This field is OPTIONAL
@@ -52,7 +57,7 @@ setup(
     # The url field should contain a link to a git repository, the project's website
     # or the project's documentation. I'll leave a link to this project's Github repository.
     # This field is OPTIONAL
-    url="https://github.com/ione03/pyaes256",
+    url="https://github.com/PROJECT-OUTBOX/django_lib_aes256",
 
     # The author name and email fields are self explanatory.
     # These fields are OPTIONAL
@@ -71,7 +76,7 @@ setup(
 
     # Keywords are tags that identify your project and help searching for it
     # This field is OPTIONAL
-    keywords="lodash, string, manipulation",
+    keywords="encrypt, decrypt, string, manipulation",
 
     # For additional fields, check:
     # https://github.com/pypa/sampleproject/blob/master/setup.py
